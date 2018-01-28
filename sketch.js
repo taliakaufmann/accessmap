@@ -136,7 +136,23 @@ function draw() {
 	noStroke();
 	fill(0);
 	textSize(11);
-	text("Data sources - Google Places API & NASA", legend_x, .97*window.innerHeight);
+
+	text("Data sources - Google Places API & NASA", legend_x, .94*window.innerHeight);
+
+	var l_b = createElement("a","By");
+	l_b.position(legend_x, .96*window.innerHeight)
+	l_b.style('font-family: "Roboto"; font-style: "lighter"; font-size: 11px; border:none; background-color:white;')
+var l_b2 = createElement("a","&");
+	l_b2.position(legend_x+95, .96*window.innerHeight)
+		l_b2.style('font-family: "Roboto"; font-style: "lighter"; font-size: 11px; border:none; background-color:white;')
+
+	var l_t = createA("http://www.taliakaufmann.com/","Talia Kaufmann");
+	l_t.position(legend_x+15, .96*window.innerHeight)
+	var l_e = createA('http://arminakhavan.co', " Armin Akhavan")
+	l_e.position(legend_x+105, .96*window.innerHeight);
+	l_t.style('font-family: "Roboto"; font-style: "lighter"; font-size: 11px; border:none; background-color:white;')
+
+	l_e.style('font-family: "Roboto"; font-style: "lighter"; font-size: 11px; border:none; background-color:white;')
 
 
 	colorMode(HSL, 360, 100, 100, 1);
